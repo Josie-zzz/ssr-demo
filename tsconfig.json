@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "jsx": "react",
+        "module": "ES6",
+        // 允许从没有设置默认导出的模块中默认导入，不用的话，比如 引用react 会飘红
+        "allowSyntheticDefaultImports": true,
+        // 模块解析策略，如果不配置的话，导入文件不会自动寻找其 index 文件
+        "moduleResolution": "Node",
+    }
+}
