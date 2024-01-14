@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "target": "es5",
+        // TypeScript会把 JSX 语法转换为 React.createElement
         "jsx": "react",
         "module": "ES6",
         // 允许从没有设置默认导出的模块中默认导入，不用的话，比如 引用react 会飘红
