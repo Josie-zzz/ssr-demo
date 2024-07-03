@@ -11,8 +11,6 @@ module.exports = () => {
         return merge(commonConfig, devConfig);
       case 'production':
         return merge(commonConfig, prodConfig);
-      case 'monitor':
-        return merge(commonConfig, monitorConfig);
       default:
         throw new Error('No matching configuration was found!');
     }

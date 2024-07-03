@@ -1,3 +1,13 @@
 module.exports = {
-    // presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-flow'],
+    presets: [
+        '@babel/preset-react',
+        [
+            '@babel/preset-env',
+            {
+                targets: {
+                    browsers: ['last 2 versions'],
+                },
+            },
+        ],
+    ],
 }

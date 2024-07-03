@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 let sum = 0
 let count = 100
-const TestHook = () => {
+const HookCom = () => {
     const [status, setStatus] = useState(false)
     const [env, setEnv] = useState(false)
 
@@ -29,7 +29,7 @@ const TestHook = () => {
 
     return (
         <div>
-            <div onClick={() => setStatus(!status)}>hhhh</div>
+            <div onClick={() => setStatus(!status)}>hhhh9999</div>
             <div onClick={() => setEnv(!env)}>houhou</div>
         </div>
     )
@@ -61,11 +61,11 @@ const Btn = () => {
         <div>sjskjs</div>
     )
 }
-interface IP {
-    children: React.ReactNode
-}
 
-const Step: React.FC<IP> = (props) => {
+const Step = (props) => {
+    // const store = useSyncExternalStore((callback) => {
+
+    // })
     
     // const bbb = React.cloneElement(props.children, {
     //     get () {
@@ -81,4 +81,4 @@ const Step: React.FC<IP> = (props) => {
     )
 }
 
-export default TestHook
+export default HookCom
