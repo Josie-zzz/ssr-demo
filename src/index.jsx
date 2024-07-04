@@ -11,16 +11,16 @@ import './index.less'
 // ))
 
 /** 配合服务端 api renderToString  使用的 ssr */
-// import { BrowserRouter as Router } from 'react-router-dom'
-// import App from './pages/app'
-// const domNode = document.getElementById('root')
-// const NewApp = (
-//     <Router basename="/client">
-//         <App />
-//     </Router>
-// )
-// hydrateRoot(domNode, NewApp)
+import { BrowserRouter as Router } from 'react-router-dom'
+import App from './pages/app'
+const domNode = document.getElementById('root')
+const NewApp = (
+    <Router>
+        <App />
+    </Router>
+)
+hydrateRoot(domNode, NewApp)
 
 /** 配合流式渲染 api renderToPipeableStream 使用的 ssr  */
-import AllApp from "./pages/WebApp";
-hydrateRoot(document, <AllApp assetMap={window.assetMap} />)
+// import AllApp from "./pages/WebApp";
+// hydrateRoot(document, <AllApp assetMap={window.assetMap} />)

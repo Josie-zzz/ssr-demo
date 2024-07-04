@@ -1,7 +1,6 @@
 const commonConfig = require('./webpack.common')
 const devConfig = require('./webpack.dev')
 const prodConfig = require('./webpack.prod')
-const monitorConfig = require('./webpack.monitor')
 const { merge } = require('webpack-merge')
 
 module.exports = () => {
