@@ -6,3 +6,4 @@ output
 build
 dist
 .babel-cache
+lib
