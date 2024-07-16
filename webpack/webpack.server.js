@@ -1,10 +1,7 @@
-// const commonConfig = require('./webpack.common')
-// const { merge } = require('webpack-merge')
 const path = require('path')
-const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-    // 构建目标，默认是 ‘web’
+    // 构建目标，默认是 ‘web’，使用 node，他不会打包任何node内置模块
     target: 'node',
     mode: 'development',
     entry: path.resolve(__dirname, '../src/server/index.jsx'),
