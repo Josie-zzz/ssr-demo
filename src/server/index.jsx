@@ -30,9 +30,7 @@ app.use(express.static('dist'))
 //     <title>hello888</title>
 //     <script defer src="http://localhost:3009/main.js"></script>
 // </head>
-// <body>
-//     <div id="root">${content}</div>
-// </body>
+// <body><div id="root">${content}</div></body>
 // </html>
 //     `)
 // })
